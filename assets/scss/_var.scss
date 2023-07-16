@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+$pr-fond : 'Inter',
+sans-serif;
+$white-color: #ffffff;
+$black-color: #000000;
+$grey-color: #E5E5E5;
+$orangred-color: #EFA73E;
+$blue-color: #17213B;
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.container{
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}

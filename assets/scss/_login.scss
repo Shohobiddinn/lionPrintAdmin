@@ -1,0 +1,67 @@
+.login_page {
+    .container {
+        @include flex(center, center);
+
+        .login_page_content {
+            @include flex(center, center);
+            flex-direction: column;
+            background-color: $grey-color;
+            border-radius: 15px;
+            padding: 60px;
+
+            &_logo {
+                margin-bottom: 73px;
+
+                img {
+                    width: 231px;
+                    height: 126px;
+                }
+            }
+
+            &_title {
+                text-align: center;
+                @include fond(400, 25);
+                color: $blue-color;
+                margin-bottom: 35px;
+            }
+
+            &_inputs {
+                margin-bottom: 108px;   
+                &_input {
+                    display: flex;
+                    flex-direction: column;
+
+                    input {
+                        width: 393px;
+                        height: 52px;
+                        border-radius: 15px;
+                        margin-bottom: 21px;
+                        outline: none;
+                        border: none;
+                        background: $white-color;
+                        padding: 14px 18px;
+                        @include fond(400,20);
+                        color: $blue-color;
+                        &::placeholder{
+                        @include fond(400,20);
+                        color: $blue-color;
+
+                        }
+                    }
+                }
+            }
+
+            &_icon {
+                @include flex(center, center);
+                background-color: $blue-color;
+                width: 100%;
+                color: $white-color;
+                @include fond(400, 23);
+                padding: 12px;
+                border-radius: 15px;
+                cursor: pointer;
+                user-select: none;
+            }
+        }
+    }
+}

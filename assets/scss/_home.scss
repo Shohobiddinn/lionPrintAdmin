@@ -1,0 +1,189 @@
+nav {
+    padding-top: 47px;
+    background-color: $white-color;
+
+    .container {
+        @include flex(flex-start, flex-start);
+        gap: 200px;
+
+        .items {
+            .menu {
+                @include flex(center, flex-start);
+                gap: 60px;
+                padding: 20px 23px;
+                background-color: $grey-color;
+                border-radius: 15px;
+                margin-bottom: 27px;
+
+
+                &_item {
+                    &_link {
+                        @include fond(400, 25);
+                        color: $blue-color;
+                        padding: 5px 28px;
+                        background-color: $white-color;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
+
+.banner {
+    .container {
+        .banner_nav {
+            @include flex(center, space-between);
+            margin-bottom: 32px;
+
+            .item {
+                width: 391px;
+                @include flex(center, center);
+                background: $grey-color;
+                border-radius: 15px;
+                padding: 15px;
+                cursor: pointer;
+                @include fond(400, 17);
+                color: $black-color;
+                cursor: pointer;
+
+            }
+
+        }
+
+        .banner_bottom {
+            flex-direction: column;
+
+            .slice_items {
+                margin-bottom: 39px;
+
+                @include flex(center, flex-start);
+                flex-wrap: wrap;
+                gap: 22px;
+
+                .item {
+                    background-color: $grey-color;
+                    border-radius: 15px;
+                    padding: 6px 25px;
+                    @include fond(400, 20);
+                    color: $blue-color;
+                    cursor: pointer;
+
+                    &.item_all {
+                        background-color: $orangred-color;
+                        color: $white-color;
+                    }
+                }
+            }
+
+            .items {
+                @include flex (center, flex-start);
+                margin-top: 22px;
+                flex-wrap: wrap;
+                gap: 22px;
+
+                .item {
+                    background-color: $grey-color;
+                    border-radius: 15px;
+                    padding: 6px 25px;
+                    @include fond(400, 20);
+                    color: $blue-color;
+                    cursor: pointer;
+                    display: inline-block;
+                }
+
+
+            }
+
+            .search {
+                @include flex(center, center);
+                gap: 12px;
+                width: 929px;
+                height: 54px;
+                border-radius: 15px;
+                background-color: $grey-color;
+                padding: 5px 10px;
+                margin-bottom: 75px;
+
+                &_input {
+                    width: calc(100% - 30px);
+                    height: 100%;
+                    border-radius: 15px;
+                    outline: none;
+                    border: none;
+                    padding: 5px 20px;
+                    @include fond(400, 25);
+                    color: $blue-color;
+
+                    &::placeholder {
+                        @include fond(400, 25);
+                        color: $blue-color;
+                    }
+                }
+
+                &_icon {
+                    width: 30px;
+                    cursor: pointer;
+
+                    svg {
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                }
+            }
+
+            .bolim {
+                background-color: $grey-color;
+                @include flex (center, space-evenly);
+                gap: 30px;
+                padding: 18px;
+                border-radius: 15px;
+                width: 100%;
+                margin-bottom: 44px;
+
+                &_item {
+                    @include fond(400, 25);
+                    color: $blue-color;
+                    padding: 10px 20px;
+                    background-color: $white-color;
+                    border-radius: 15px;
+                }
+            }
+
+            .peoples {
+                .people {
+                    width: 1045px;
+                    @include flex(center, space-between);
+                    background-color: $grey-color;
+                    margin-bottom: 14px;
+                    border-radius: 15px;
+
+                    .item {
+                        @include fond(400, 25);
+                        color: $blue-color;
+                        @include flex(center, flex-start);
+                        gap: 30px;
+                        padding: 37px 27px;
+text-transform: capitalize;
+                        &::before {
+                            content: "";
+                            display: inline-block;
+                            width: 2px;
+                            height: 29px;
+                            background-color: $blue-color;
+
+                        }
+
+                        &:nth-child(1)::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
